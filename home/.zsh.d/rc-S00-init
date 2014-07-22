@@ -1,0 +1,37 @@
+alias vi='vim'
+export PATH=$PATH:/sbin:/usr/sbin
+export HISTSIZE=100000
+export LANG='ja_JP.UTF-8'
+export LC_ALL='ja_JP.UTF-8'
+export LC_MESSAGES='ja_JP.UTF-8'
+alias grep='grep -n --color=auto'
+
+autoload -U compinit; compinit
+bindkey -e
+
+# 複数の zsh を同時に使う時など history ファイルに上書きせず追加する
+setopt append_history
+
+# 指定したコマンド名がなく、ディレクトリ名と一致した場合 cd する
+setopt auto_cd
+
+# 8 ビット目を通すようになり、日本語のファイル名などを見れるようになる
+setopt print_eightbit
+
+# コマンドラインの引数で --prefix=/usr などの = 以降でも補完できる
+setopt magic_equal_subst
+
+# 戻り値が 0 以外の場合終了コードを表示する
+setopt print_exit_value
+
+# rm * などの際、本当に全てのファイルを消して良いかの確認しないようになる
+setopt rm_star_silent
+
+# ファイル名で #, ~, ^ の 3 文字を正規表現として扱う
+setopt extended_glob
+
+# 補完候補を一覧で表示する(d)
+setopt auto_list
+
+# 補完キー連打で補完候補を順に表示する(d)
+setopt auto_menu
