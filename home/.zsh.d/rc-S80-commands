@@ -7,3 +7,5 @@ function over_five() {
     awk '{ if ($1 >= 5 * 1024) { print } }'
 }
 alias largefiles='sudo du -m -x -d 5 / | over_five'
+
+alias grep='grep -n --color=auto'
