@@ -9,3 +9,6 @@ function over_five() {
 alias largefiles='sudo du -m -x -d 5 / | over_five'
 
 alias grep='grep -n --color=auto'
+
+alias ll='ls -ltr'
+alias la='ls -ltra'
