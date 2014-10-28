@@ -108,17 +108,9 @@ autocmd FileType ruby :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoind
 autocmd FileType eruby :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType html :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType yaml :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType scss :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType coffee :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
-
-let g:sass_compile_auto = 1
-let g:sass_compile_cdloop = 5
-let g:sass_compile_cssdir = ['css', 'stylesheet', 'stylesheets']
-let g:sass_compile_file = ['scss', 'sass']
-let g:sass_started_dirs = []
-
-autocmd FileType less,sass setlocal sw=2 sts=2 ts=2 et
-au! BufWritePost * SassCompile
 
 "------------------------------------
 " indent_guides
