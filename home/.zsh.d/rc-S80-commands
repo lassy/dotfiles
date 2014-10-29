@@ -10,5 +10,6 @@ alias largefiles='sudo du -m -x -d 5 . | over_five'
 
 alias grep='grep --color=auto'
 
+alias l.='ls -d .*'
 alias ll='ls -ltr'
 alias la='ls -ltra'
