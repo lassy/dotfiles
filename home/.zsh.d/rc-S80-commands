@@ -1,5 +1,5 @@
 function search() {
-    find . -name "*.$1" | xargs grep --color=auto $2
+    find . -name "*.$1" | xargs grep --color=auto "$2"
 }
 alias search='search'
 
