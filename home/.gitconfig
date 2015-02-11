@@ -1,0 +1,27 @@
+[user]
+    name =
+    email =
+[color]
+    ui = auto
+[core]
+    pager = lv -c
+    editor = vim -c \"set fenc=utf-8\"
+    precomposeunicode = true
+[push]
+    default = tracking
+[tig "bind"]
+    generic = g move-first-line
+    generic = G move-last-line
+[alias]
+    st = status
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    ls  = log --graph --date-order --all --color --pretty=format:'%Cblue%h %Cgreen%ci %Cred%cn %Cblue%m %Creset%s %Cred%d'
+    tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+    difff = diff --word-diff
+    amend = commit --amend
+[branch "develop"]
+    rebase = true
+[branch "master"]
+    rebase = true
