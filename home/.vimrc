@@ -6,8 +6,9 @@ filetype off
 
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim
-    call neobundle#rc(expand('~/.vim/bundle/'))
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
@@ -20,6 +21,8 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " for CoffeeScript
 NeoBundle 'kchmck/vim-coffee-script'
@@ -28,6 +31,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " for Chef
 NeoBundle 'ryuzee/neocomplcache_php_selenium_snippet'
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet_chef_recipe_snippet/autoload/neosnippet/snippets'
+
+call neobundle#end()
 
 filetype plugin indent on     " required!
 filetype indent on
