@@ -21,6 +21,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'slim-template/vim-slim'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
@@ -106,13 +107,15 @@ set expandtab
 " set noexpandtab
 " PHPファイルの補助
 filetype on
-autocmd FileType php    :setlocal foldmethod=marker makeprg=php\ -l\ %
-autocmd FileType php    :setlocal foldmethod=marker efm=%m\ in\ %f\ on\ line\ %l
+autocmd FileType php    :setlocal foldmethod=marker tabstop=4 shiftwidth=4 autoindent
+autocmd FileType php    :setlocal makeprg=php\ -l\ %
+autocmd FileType php    :setlocal efm=%m\ in\ %f\ on\ line\ %l
 
 autocmd FileType ruby   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType eruby  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType html   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType yaml   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType slim   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 au BufRead,BufNewFile,BufReadPre *.scss set filetype=sass
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType scss   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
