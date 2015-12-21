@@ -22,6 +22,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'yaymukund/vim-rabl'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
@@ -116,6 +117,7 @@ autocmd FileType eruby  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoi
 autocmd FileType html   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType yaml   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType slim   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType rabl   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 au BufRead,BufNewFile,BufReadPre *.scss set filetype=sass
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType scss   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
