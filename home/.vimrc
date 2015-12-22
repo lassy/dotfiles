@@ -23,6 +23,8 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'yaymukund/vim-rabl'
+" for JSON
+NeoBundle 'elzr/vim-json'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
@@ -123,6 +125,7 @@ au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType scss   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType sass   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType coffee :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType json   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 
 "------------------------------------
 " indent_guides
