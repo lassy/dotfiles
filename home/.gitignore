@@ -1,0 +1,6 @@
+# Ignore rbenv gemset fils.
+.rbenv-gemsets
+
+# Ignore swap files.
+*.swp
+*.swo
