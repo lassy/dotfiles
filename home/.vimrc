@@ -23,6 +23,10 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'yaymukund/vim-rabl'
+
+" for HTML5
+NeoBundle 'othree/html5.vim'
+
 " for JSON
 NeoBundle 'elzr/vim-json'
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
@@ -120,7 +124,7 @@ autocmd FileType html   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoi
 autocmd FileType yaml   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType slim   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType rabl   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
-au BufRead,BufNewFile,BufReadPre *.scss set filetype=sass
+au BufRead,BufNewFile,BufReadPre *.scss   set filetype=sass
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType scss   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType sass   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
