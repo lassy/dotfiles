@@ -8,6 +8,8 @@
     editor = vim -c \"set fenc=utf-8\"
     precomposeunicode = true
     excludesfile = ~/.gitignore
+[pager]
+    branch = cat
 [push]
     default = tracking
 [tig "bind"]
