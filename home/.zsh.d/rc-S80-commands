@@ -1,12 +1,36 @@
+# search $1 $2
+#
+# 現在のディレクトリ以降にある特定の種類のファイルから、指定されたワードを検索する
+# $1 : 調べたいファイルの拡張子 (ex. rb)
+# $2 : 調べたいワード
 function search() {
     find . -name "*.$1" | xargs grep --color=auto "$2"
 }
-alias search='search'
 
+# largefiles
+#
+# 5GB以上のファイルを表示する
 function over_five() {
     awk '{ if ($1 >= 5 * 1024) { print } }'
 }
 alias largefiles='sudo du -m -x -d 5 . | over_five'
+
+# path_grep $1
+# ex.) rake routes | path_grep advertisements/show/form
+#
+# パスを引数に渡してgrepを実行する
+function path_grep() {
+    array=(`echo $1 | tr -s '/' ' '`)
+    command=""
+    for ((i = 0; i < ${#array[@]}; i++)) do
+        if [ $i = 0 ]; then
+            command="grep ${array[$i]}"
+        else
+            command="${command} | grep ${array[$i]}"
+        fi
+    done
+    eval ${command}
+}
 
 alias grep='grep --color=auto'
 
