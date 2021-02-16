@@ -1,0 +1,7 @@
+alias grep='grep --color=auto'
+
+alias l.='ls -d .*'
+alias ll='ls -ltr'
+alias la='ls -ltra'
+
+alias lessf='less +F --follow-name'
