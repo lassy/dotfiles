@@ -46,6 +46,9 @@ NeoBundle 'fatih/vim-go'
 " for Elixir
 NeoBundle 'elixir-editors/vim-elixir'
 
+" for Vue
+NeoBundle 'posva/vim-vue'
+
 call neobundle#end()
 
 filetype plugin indent on     " required!
@@ -135,11 +138,15 @@ au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 autocmd FileType scss   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType sass   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType coffee :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType javascript :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType json   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 " Goファイルの補助
 autocmd FileType go     :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 " Elixirファイルの補助
 autocmd FileType elixir :imap >> \|><Space>
+" Vueファイルの補助
+autocmd FileType vue    :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType vue    syntax sync fromstart
 
 "------------------------------------
 " indent_guides
