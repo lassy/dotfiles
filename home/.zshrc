@@ -3,3 +3,8 @@ if [ -d "$HOME/.zsh.d" ]; then
         source $f
     done
 fi
+
+# GitHub
+export GIT_COMMITTER_NAME=""
+export GIT_AUTHOR_NAME=""
+export EMAIL=""
