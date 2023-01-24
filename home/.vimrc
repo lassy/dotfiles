@@ -144,6 +144,8 @@ autocmd FileType elixir :imap >> \|><Space>
 " Vueファイルの補助
 autocmd FileType vue    :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType vue    syntax sync fromstart
+" Terraformファイルの補助
+autocmd FileType Terraform :setlocal foldmethod=marker noexpandtab autoindent
 
 "------------------------------------
 " indent_guides
