@@ -146,7 +146,8 @@ autocmd FileType vue    :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoi
 autocmd FileType vue    syntax sync fromstart
 " Terraformファイルの補助
 autocmd FileType Terraform :setlocal foldmethod=marker noexpandtab autoindent
-
+" Protobufファイルの補助
+autocmd FileType proto  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 "------------------------------------
 " indent_guides
 "------------------------------------
