@@ -24,6 +24,9 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'yaymukund/vim-rabl'
 
+" NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'Yggdroot/indentLine'
+
 " for HTML5
 NeoBundle 'othree/html5.vim'
 
@@ -34,7 +37,6 @@ let g:syntastic_ruby_checkers = ['rubocop']
 
 " for CoffeeScript
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " for Chef
 NeoBundle 'ryuzee/neocomplcache_php_selenium_snippet'
@@ -124,7 +126,7 @@ autocmd FileType php    :setlocal foldmethod=marker tabstop=4 shiftwidth=4 autoi
 autocmd FileType php    :setlocal makeprg=php\ -l\ %
 autocmd FileType php    :setlocal efm=%m\ in\ %f\ on\ line\ %l
 
-autocmd FileType ruby   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType ruby   :setlocal foldmethod=syntax foldlevel=2 tabstop=2 shiftwidth=2 autoindent
 autocmd FileType eruby  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType html   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType yaml   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
@@ -148,6 +150,13 @@ autocmd FileType vue    syntax sync fromstart
 autocmd FileType Terraform :setlocal foldmethod=marker noexpandtab autoindent
 " Protobufファイルの補助
 autocmd FileType proto  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+"------------------------------------
+" indentLine
+"------------------------------------
+let g:indentLine_setColors = 0
+let g:indentLine_color_term = 239
+let g:indentLine_char_list = ['|', '!', '¦']
+
 "------------------------------------
 " indent_guides
 "------------------------------------
