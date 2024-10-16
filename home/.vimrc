@@ -129,7 +129,7 @@ autocmd FileType php    :setlocal efm=%m\ in\ %f\ on\ line\ %l
 autocmd FileType ruby   :setlocal foldmethod=syntax foldlevel=2 tabstop=2 shiftwidth=2 autoindent
 autocmd FileType eruby  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType html   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
-autocmd FileType yaml   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+autocmd FileType yaml   :setlocal foldmethod=indent foldlevel=1 tabstop=2 shiftwidth=2 autoindent
 autocmd FileType slim   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 autocmd FileType rabl   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
 au BufRead,BufNewFile,BufReadPre *.scss   set filetype=sass
