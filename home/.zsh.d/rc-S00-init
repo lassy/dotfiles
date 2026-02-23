@@ -1,13 +1,12 @@
-alias vi='vim'
 export PATH="$PATH:/sbin:/usr/sbin"
 export PATH="$PATH:/bin:/usr/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/.local/bin"
+
 export HISTSIZE=100000
 export LANG='ja_JP.UTF-8'
 export LC_ALL='ja_JP.UTF-8'
 export LC_MESSAGES='ja_JP.UTF-8'
-alias grep='grep -n --color=auto'
 
 autoload -U compinit; compinit
 bindkey -e
@@ -38,3 +37,10 @@ setopt auto_list
 
 # 補完キー連打で補完候補を順に表示する(d)
 setopt auto_menu
+
+# Set vi alias
+alias vi='vim'
+# Set grep options
+alias grep='grep -n --color=auto'
+# Set less environment
+export LESS="-eirMX"
