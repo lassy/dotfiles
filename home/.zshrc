@@ -5,6 +5,12 @@ if [ -d "$HOME/.zsh.d" ]; then
 fi
 
 # GitHub
+# [Must] Override in .zshrc.local to use GitHub
 export GIT_COMMITTER_NAME=""
+export GIT_COMMITTER_EMAIL=""
 export GIT_AUTHOR_NAME=""
-export EMAIL=""
+export GIT_AUTHOR_EMAIL=""
+
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
