@@ -14,12 +14,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
+" NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'jpalardy/vim-slime'
+" NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'yaymukund/vim-rabl'
@@ -36,17 +36,17 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 
 " for CoffeeScript
-NeoBundle 'kchmck/vim-coffee-script'
+" NeoBundle 'kchmck/vim-coffee-script'
 
 " for Chef
-NeoBundle 'ryuzee/neocomplcache_php_selenium_snippet'
-let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet_chef_recipe_snippet/autoload/neosnippet/snippets'
+" NeoBundle 'ryuzee/neocomplcache_php_selenium_snippet'
+" let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet_chef_recipe_snippet/autoload/neosnippet/snippets'
 
 " for Elixir
-NeoBundle 'elixir-editors/vim-elixir'
+" NeoBundle 'elixir-editors/vim-elixir'
 
 " for Vue
-NeoBundle 'posva/vim-vue'
+" NeoBundle 'posva/vim-vue'
 
 call neobundle#end()
 
@@ -150,6 +150,9 @@ autocmd FileType vue    syntax sync fromstart
 autocmd FileType Terraform :setlocal foldmethod=marker noexpandtab autoindent
 " Protobufファイルの補助
 autocmd FileType proto  :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+" Thorファイルの補助
+autocmd FileType thor   :setlocal foldmethod=marker tabstop=2 shiftwidth=2 autoindent
+
 "------------------------------------
 " indentLine
 "------------------------------------
