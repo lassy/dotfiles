@@ -109,6 +109,17 @@ set wrap
 set cmdheight=2
 set incsearch
 
+" 背景色が暗い設定を明示する
+set background=dark
+
+" ターミナルの背景色消去 (BCE) 機能を無効にする
+set t_ut=
+
+" True Color を有効にする
+if has('termguicolors')
+  set termguicolors
+endif
+
 "------------------------------------
 " コーディング補助
 "------------------------------------
