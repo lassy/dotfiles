@@ -5,3 +5,5 @@ alias ll='ls -ltr'
 alias la='ls -ltra'
 
 alias lessf='less +F --follow-name'
+
+alias difit="npx difit@latest ."
