@@ -1,0 +1,37 @@
+#===== Font =====
+font-family = Ricty
+font-size = 16
+
+#===== Theme =====
+theme = Wez
+
+# ===== Keybind =====
+# Ghostty の終了を Cmd + G に変更
+keybind = cmd+g=quit
+
+# 背景の透過を Cmd + U で切り替え
+keybind = cmd+u=toggle_background_opacity
+
+link-url = true
+
+#===== Window =====
+# 水平パディング・垂直パディング・パディングバランス
+# window-padding-x = 10
+# window-padding-y = 10
+# window-padding-balance = true
+
+# 背景の透過度
+background-opacity = 0.6
+
+# Window を最大化して起動
+maximize = true
+
+# ペイン間の移動 Command + 矢印キー
+keybind = cmd+left=goto_split:left
+keybind = cmd+right=goto_split:right
+keybind = cmd+up=goto_split:top
+keybind = cmd+down=goto_split:bottom
+
+#===== Input =====
+# 選択した箇所を自動的にコピー
+copy-on-select = clipboard
