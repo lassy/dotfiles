@@ -29,7 +29,7 @@ keybind = cmd+shift+down=goto_split:bottom
 # window-padding-balance = true
 
 # 背景の透過度
-background-opacity = 0.7
+background-opacity = 0.8
 
 # Window を最大化して起動
 maximize = true
