@@ -5,9 +5,13 @@ font-size = 16
 #===== Theme =====
 theme = Wez
 
-# ===== Keybind =====
-# Ghostty の終了を Cmd + G に変更
-keybind = cmd+g=quit
+#===== Performance =====
+# スクロールバックの上限 (1GiB)
+scrollback-limit = 1073741824
+
+#===== Keybind =====
+# Ghostty の終了を Cmd + Shift + W に変更
+keybind = cmd+shift+w=quit
 
 # 背景の透過を Cmd + U で切り替え
 keybind = cmd+u=toggle_background_opacity
